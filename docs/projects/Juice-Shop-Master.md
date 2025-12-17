@@ -13,15 +13,6 @@ This documentation is for teaching porpuses only and not ment to be used for ile
 - [Quickstart](#Quickstart)
 - [Challanges](#Challanges)
 
-import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
-
-<GithubLinkAdmonition 
-    link="https://github.com/FlyingChris1/Wordpress-SQL-Container"
-    title="Github Tip" 
-    type="tip"
->
-Checkout this repository to see the code/implementation
-</GithubLinkAdmonition>
 
 ## Prerequisites
 
@@ -50,5 +41,5 @@ npm start
 
 ## Challanges
 
-
-- [Seite A](Juice-Shop-Master-XSS)
+- [XSS attack](Juice-Shop-Master-XSS)
+- [Metadata exploit](Juice-Shop-Master-Metadata)
