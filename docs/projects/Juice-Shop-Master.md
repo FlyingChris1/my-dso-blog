@@ -42,4 +42,4 @@ npm start
 ## Challanges
 
 - [XSS attack](Juice-Shop-Master-XSS)
-- [Metadata exploit](Juice-Shop-Master-Metadata)
+- [Metadata exploit](Juice-Shop-Master-Meta-Geo-Stalking)

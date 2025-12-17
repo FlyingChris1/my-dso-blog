@@ -1,4 +1,4 @@
-# Juice Shop Master XXS attack
+# Juice Shop Master XSS attack
 
 This documentation provides information on which unverified input is sent to a web application, allowing an attacker to execute JavaScript code in a user's browser.
 
@@ -26,17 +26,13 @@ cd juice-shop
 npm start
 ```
 
+
 2. Connect to the OWASP Juice Shop via Browser
 
 ```bash
 http://<localhost>:3000
 ```
 
-3. Connect to the OWASP Juice Shop via Browser
-
-```bash
-http://<localhost>:3000
-```
 
 3. Find a typing field. For example the searchbar 
 
