@@ -25,6 +25,8 @@ This documentation is for teaching porpuses only and not ment to be used for ile
 
 2. right click and save the file to a path of your choice
 
+![pic from John](/img/john-pic.png)
+
 3. Enter the terminal and go the path where the file is stored
 
 ```bash
@@ -38,6 +40,13 @@ cd <path to the file>
 exiftool <file name>
 ```
 
+5. Enter the gps position in google maps and find his favorite hiking place
 
-![test](/img/docusaurus.png)
+```bash
+https://www.google.com/maps/place/36°57'31.4"N+84°20'53.6"W
+```
+![hiking place](/img/hiking.png)
 
+6. Reset his password with the security question
+
+![reset](/img/reset.png)
