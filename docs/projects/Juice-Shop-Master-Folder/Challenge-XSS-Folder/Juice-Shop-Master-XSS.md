@@ -41,7 +41,7 @@ http://<localhost>:3000
 
 3. Find a typing field. For example the searchbar 
 
-![insert code](/img/insert_code.png)
+![insert code](insert_code.png)
 
 
 4. insert you code
