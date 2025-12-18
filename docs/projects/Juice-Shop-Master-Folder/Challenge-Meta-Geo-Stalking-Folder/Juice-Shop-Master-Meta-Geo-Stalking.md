@@ -2,10 +2,15 @@
 
 This documentation provides information on how you can abuse the security question system. Through Meta Geo stalking you could be able to reset a users password.
 
-## Disclaimer
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 
+<GithubLinkAdmonition 
+    link="https://github.com/FlyingChris1/my-dso-blog"
+    title="Disclaimer" 
+    type="tip"
+>
 This documentation is for teaching porpuses only and not ment to be used for ilegal porpuses!
-
+</GithubLinkAdmonition>
 
 ## Table of Contents
 

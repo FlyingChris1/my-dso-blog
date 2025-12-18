@@ -2,10 +2,15 @@
 
 This repository provides information on metadata, XSS and Kali Linux. The goal is to show the vulnerabilities of websites and show you how people could abuse them to get to your information or even build in code that is not supposed to be on your website.
 
-## Disclaimer
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 
+<GithubLinkAdmonition 
+    link="https://github.com/FlyingChris1/my-dso-blog"
+    title="Disclaimer" 
+    type="tip"
+>
 This documentation is for teaching porpuses only and not ment to be used for ilegal porpuses!
-
+</GithubLinkAdmonition>
 
 ## Table of Contents
 
@@ -41,5 +46,5 @@ npm start
 
 ## Challanges
 
-- [XSS attack](Juice-Shop-Master-XSS)
-- [Metadata exploit](Juice-Shop-Master-Meta-Geo-Stalking)
+- [XSS attack](Challenge-XSS-Folder/Juice-Shop-Master-XSS)
+- [Metadata exploit](Challenge-Meta-Geo-Stalking-Folder/Juice-Shop-Master-Meta-Geo-Stalking)

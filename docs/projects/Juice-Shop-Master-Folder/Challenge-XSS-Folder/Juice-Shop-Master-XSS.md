@@ -2,10 +2,15 @@
 
 This documentation provides information on which unverified input is sent to a web application, allowing an attacker to execute JavaScript code in a user's browser.
 
-## Disclaimer
+import GithubLinkAdmonition from '@site/src/components/GithubLinkAdmonition';
 
+<GithubLinkAdmonition 
+    link="https://github.com/FlyingChris1/my-dso-blog"
+    title="Disclaimer" 
+    type="tip"
+>
 This documentation is for teaching porpuses only and not ment to be used for ilegal porpuses!
-
+</GithubLinkAdmonition>
 
 ## Table of Contents
 
