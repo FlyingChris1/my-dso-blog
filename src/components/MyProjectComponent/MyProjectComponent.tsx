@@ -42,7 +42,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
                 </li>
               ))}
             </ul>
-            <a href="docs/projects/Conduit-Container.md" target="_blank"className={styles.seeMoreDesktop}>
+            <a href="docs/projects/Conduit-Container" target="_blank"className={styles.seeMoreDesktop}>
               See more projects
             </a>
           </nav>
@@ -121,7 +121,7 @@ export default function MyProjects({ projects, title }: IProjectsProps) {
           </div>
           </div>
         ))}
-        <a href="docs/projects/Conduit-Container.md" target="_blank">
+        <a href="docs/projects/Conduit-Container" target="_blank">
           <button className={styles.respSeeMoreButton}>See more projects</button>
         </a>
       </div>
