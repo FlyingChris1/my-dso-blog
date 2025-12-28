@@ -27,7 +27,7 @@ export default function ImprintPage() {
                         </p>
 
                         <p className="imprint-text">
-                            Tel.:{" "}
+                            Telefon:{" "}
                             <a className="aContact" href="tel:+4917661432847">
                                 +4917661432847
                             </a>

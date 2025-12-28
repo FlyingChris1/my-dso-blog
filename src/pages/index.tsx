@@ -17,96 +17,105 @@ export default function Render() {
 
 
 <MySkills
-  skills={[
-    { 
-      label: "HTML", 
-      imagePath: "img/skills/HTML.png",
-      descriptions: [
-        "Builds the structure of web pages",
-        "Organizes content for browsers",
-        "Works seamlessly with CSS and JavaScript"
-      ]
-    },
-    { 
-      label: "CSS", 
-      imagePath: "img/skills/CSS.png",
-      descriptions: [
-        "Shapes the visual appearance of websites",
-        "Controls layout, typography, and colors",
-        "Enables flexible designs for different screens"
-      ]
-    },
-    { 
-      label: "Docusaurus", 
-      imagePath: "img/skills/Docusaurus.png",
-      descriptions: [
-        "Creates clear and organized documentation sites",
-        "Supports Markdown content out of the box",
-        "Simplifies version control and theming"
-      ]
-    },
-    { 
-      label: "Python", 
-      imagePath: "img/skills/Python.png",
-      descriptions: [
-        "Versatile language for many types of projects",
-        "Perfect for automation and scripting tasks",
-        "Extensive ecosystem of libraries and frameworks"
-      ]
-    },
-    { 
-      label: "Shell scripting", 
-      imagePath: "img/skills/Terminal.png",
-      descriptions: [
-        "Automates repetitive terminal tasks",
-        "Utilizes loops, conditions, and variables",
-        "Ideal for Linux and Unix systems"
-      ]
-    },
-    { 
-      label: "YAML", 
-      imagePath: "img/skills/YAML.png",
-      descriptions: [
-        "Human-friendly format for structured data",
-        "Commonly used in configuration files",
-        "Supports CI/CD pipelines and deployment setups"
-      ]
-    },
-    { 
-      label: "Container", 
-      imagePath: "img/skills/Docker.png",
-      descriptions: [
-        "Packages apps with all dependencies included",
-        "Ensures consistent runtime across environments",
-        "Lightweight alternative to full virtual machines"
-      ]
-    },
-    { 
-      label: "CI/CD with Github Actions", 
-      imagePath: "img/skills/Actions.png",
-      descriptions: [
-        "Automates development workflows",
-        "Simplifies building, testing, and deployment",
-        "Fully integrated with GitHub repositories"
-      ]
-    },
-    { 
-      label: "IT Security", 
-      imagePath: "img/skills/Security.png",
-      descriptions: [
-        "Safeguards systems and sensitive data",
-        "Applies best practices and security policies",
-        "Detects and responds to potential threats"
-      ]
-    },
-  ]}
-/>
+          skills={[
+            {
+              label: "HTML",
+              imagePath: "img/skills/HTML.png",
+              imagePathRespo: "img/skills/HTML.png",
+              descriptions: [
+                "Builds the structure of web pages",
+                "Organizes content for browsers",
+                "Works seamlessly with CSS and JavaScript"
+              ]
+            },
+            {
+              label: "CSS",
+              imagePath: "img/skills/CSS.png",
+              imagePathRespo: "img/skills/respo/CSS.png",
+              descriptions: [
+                "Shapes the visual appearance of websites",
+                "Controls layout, typography, and colors",
+                "Enables flexible designs for different screens"
+              ]
+            },
+            {
+              label: "Docusaurus",
+              imagePath: "img/skills/Docusaurus.png",
+              imagePathRespo: "img/skills/respo/Docusaurus.png",
+              descriptions: [
+                "Creates clear and organized documentation sites",
+                "Supports Markdown content out of the box",
+                "Simplifies version control and theming"
+              ]
+            },
+            {
+              label: "Python",
+              imagePath: "img/skills/Python.png",
+              imagePathRespo: "img/skills/respo/Python.png",
+              descriptions: [
+                "Versatile language for many types of projects",
+                "Perfect for automation and scripting tasks",
+                "Extensive ecosystem of libraries and frameworks"
+              ]
+            },
+            {
+              label: "Shell scripting",
+              imagePath: "img/skills/Terminal.png",
+              imagePathRespo: "img/skills/respo/Terminal.png",
+              descriptions: [
+                "Automates repetitive terminal tasks",
+                "Utilizes loops, conditions, and variables",
+                "Ideal for Linux and Unix systems"
+              ]
+            },
+            {
+              label: "YAML",
+              imagePath: "img/skills/YAML.png",
+              imagePathRespo: "img/skills/respo/YAML.png",
+              descriptions: [
+                "Human-friendly format for structured data",
+                "Commonly used in configuration files",
+                "Supports CI/CD pipelines and deployment setups"
+              ]
+            },
+            {
+              label: "Container",
+              imagePath: "img/skills/Docker.png",
+              imagePathRespo: "img/skills/respo/Docker.png",
+              descriptions: [
+                "Packages apps with all dependencies included",
+                "Ensures consistent runtime across environments",
+                "Lightweight alternative to full virtual machines"
+              ]
+            },
+            {
+              label: "CI/CD with Github Actions",
+              imagePath: "img/skills/Actions.png",
+              imagePathRespo: "img/skills/respo/Actions.png",
+              descriptions: [
+                "Automates development workflows",
+                "Simplifies building, testing, and deployment",
+                "Fully integrated with GitHub repositories"
+              ]
+            },
+            {
+              label: "IT Security",
+              imagePath: "img/skills/Security.png",
+              imagePathRespo: "img/skills/respo/Security.png",
+              descriptions: [
+                "Safeguards systems and sensitive data",
+                "Applies best practices and security policies",
+                "Detects and responds to potential threats"
+              ]
+            },
+          ]}
+        />
+
 
       <MyProjects
-        title="My Projects"
         projects={[
           {
-            label: "Minecraft Server Container",
+            label: "Minecraft Container",
             imagePath: "img/projects/projects/Minecraft.png",
             description: "The goal of the project is to build a custom Docker image without using prebuilt Minecraft images and to run the server using Docker Compose.",
             githubUrl: "https://github.com/FlyingChris1/Minecraft-Server-Container",
@@ -123,7 +132,7 @@ export default function Render() {
             ],
           },
           {
-            label: "OWASP Juice Shop Master",
+            label: "Juice Shop Master",
             imagePath: "img/projects/projects/juiceshop.png",
             description:
               "The goal is to show the vulnerabilities of websites and show you how people could abuse them to get to your information or even build in code that is not supposed to be on your website.",

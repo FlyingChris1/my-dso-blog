@@ -19,7 +19,7 @@ height: 100vh;
   text-align: start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;     
+  align-items: flex-start;     /* Inhalt links */
   justify-content: flex-start;
   gap: 10px;
 }

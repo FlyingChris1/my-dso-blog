@@ -24,6 +24,7 @@ export default function Render() {
             {
               label: "HTML",
               imagePath: "img/skills/HTML.png",
+              imagePathRespo: "img/skills/HTML.png",
               descriptions: [
                 "Builds the structure of web pages",
                 "Organizes content for browsers",
@@ -33,6 +34,7 @@ export default function Render() {
             {
               label: "CSS",
               imagePath: "img/skills/CSS.png",
+              imagePathRespo: "img/skills/respo/CSS.png",
               descriptions: [
                 "Shapes the visual appearance of websites",
                 "Controls layout, typography, and colors",
@@ -42,6 +44,7 @@ export default function Render() {
             {
               label: "Docusaurus",
               imagePath: "img/skills/Docusaurus.png",
+              imagePathRespo: "img/skills/respo/Docusaurus.png",
               descriptions: [
                 "Creates clear and organized documentation sites",
                 "Supports Markdown content out of the box",
@@ -51,6 +54,7 @@ export default function Render() {
             {
               label: "Python",
               imagePath: "img/skills/Python.png",
+              imagePathRespo: "img/skills/respo/Python.png",
               descriptions: [
                 "Versatile language for many types of projects",
                 "Perfect for automation and scripting tasks",
@@ -60,6 +64,7 @@ export default function Render() {
             {
               label: "Shell scripting",
               imagePath: "img/skills/Terminal.png",
+              imagePathRespo: "img/skills/respo/Terminal.png",
               descriptions: [
                 "Automates repetitive terminal tasks",
                 "Utilizes loops, conditions, and variables",
@@ -69,6 +74,7 @@ export default function Render() {
             {
               label: "YAML",
               imagePath: "img/skills/YAML.png",
+              imagePathRespo: "img/skills/respo/YAML.png",
               descriptions: [
                 "Human-friendly format for structured data",
                 "Commonly used in configuration files",
@@ -78,6 +84,7 @@ export default function Render() {
             {
               label: "Container",
               imagePath: "img/skills/Docker.png",
+              imagePathRespo: "img/skills/respo/Docker.png",
               descriptions: [
                 "Packages apps with all dependencies included",
                 "Ensures consistent runtime across environments",
@@ -87,6 +94,7 @@ export default function Render() {
             {
               label: "CI/CD with Github Actions",
               imagePath: "img/skills/Actions.png",
+              imagePathRespo: "img/skills/respo/Actions.png",
               descriptions: [
                 "Automates development workflows",
                 "Simplifies building, testing, and deployment",
@@ -96,6 +104,7 @@ export default function Render() {
             {
               label: "IT Security",
               imagePath: "img/skills/Security.png",
+              imagePathRespo: "img/skills/respo/Security.png",
               descriptions: [
                 "Safeguards systems and sensitive data",
                 "Applies best practices and security policies",
@@ -158,7 +167,6 @@ export default function Render() {
             },
           ]
           }
-          title="My Projects"
         />
         <Contact></Contact>
         <Footer></Footer>

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    background-color: #365387;
+    background-color: #266AD9;
     width: 100%;
 }
 
@@ -52,23 +52,21 @@
 .projectList li {
     font-size: 24px;
     cursor: pointer;
-    transition: 0.25s ease;
     font-size: Quicksand;
 }
 
 .projectList li:hover {
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateX(6px);
+    background: rgba(164, 9, 9, 0.15);
 }
 
 .active {
     color: #262E34;
     font-weight: 600;
-    transform: translateX(6px);
 }
 
 .projectLinks {
     display: flex;
+    justify-content: flex-end;
     width: 500px;
     gap: 20px;
     margin-top: auto;
@@ -92,7 +90,7 @@
     height: 46px;
     border: none;
     border-radius: 40px;
-    background: #365387;
+    background: #266AD9;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
@@ -129,7 +127,7 @@
 
 .oben {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -203,7 +201,7 @@
     }
 
     .respCard {
-        background: #365387;
+        background: #266AD9;
         color: #FFFFFF;
         max-width: 700px;
         width: 100%;
@@ -261,7 +259,7 @@
 
     .respButtonLight {
         background: #FFFFFF;
-        color: #365387;
+        color: #3b66d4;
         padding: 10px 22px;
         border-radius: 50px;
         font-weight: 600;
@@ -283,7 +281,7 @@
         margin: 20px 0;
         padding: 12px 28px;
         border-radius: 50px;
-        background: #365387;
+        background: #266AD9;
         border: 2px solid #FFFFFF;
         font-weight: 600;
         width: 300px;
@@ -295,10 +293,12 @@
 @media (max-width: 1230px) {
     .title{
         font-size: 32px;
-        margin-bottom: 0;
-        background-color: #365387;
+        margin-bottom: 16px;
     }
 }
+
+
+
 
 
 @media (max-width: 500px) {
@@ -308,6 +308,7 @@
 
     .respCard {
         padding: 0 24px;
+        width: 100vw;
     }
 
     .respContent {
@@ -317,5 +318,9 @@
 
     .respSeeMoreButton{
         width: 95%;
+    }
+
+    .respTags{
+        gap: 10px;
     }
 }

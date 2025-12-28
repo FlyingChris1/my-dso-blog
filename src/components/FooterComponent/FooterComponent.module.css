@@ -47,7 +47,12 @@
     }
 
     .spanCopyright{
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .contactContactRoutes{
+        align-items: center;
+        margin-bottom: 55px;
     }
 }
 
@@ -63,7 +68,6 @@
 }
 @media screen and (min-width: 1421px) {
     .contact {
-        /* calculation: (100% - 1420px) / 2 = 50% - 710px */
         padding: 64px max(80px, calc(50% - 710px));
     }
 }
