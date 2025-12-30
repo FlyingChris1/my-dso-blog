@@ -33,16 +33,23 @@
     display: none;
 }
 
-
 @media screen and (max-width: 1230px) {
+
     .header {
         display: none;
     }
 
+    /* Menü-Auflistung */
     .navElement {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        align-items: center;
+        gap: 24px;          /* gleicher Abstand */
+        padding: 0;
+
+        /* DAS ist der entscheidende Fix */
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .navbarRespo {
@@ -51,6 +58,7 @@
         align-items: flex-end;
         padding-top: 12px;
         width: 100%;
+        box-sizing: border-box;
     }
 
     .navLine {
@@ -61,6 +69,7 @@
         cursor: pointer;
         width: 100%;
         padding: 16px 24px;
+        box-sizing: border-box;
     }
 
     .navbarOpen {
@@ -69,14 +78,21 @@
         align-items: center;
         background-color: #FFFFFF;
         color: black;
-        width: 100%;
+
         position: absolute;
         top: 0;
+        left: 0;
+        right: 0;
+
+        box-sizing: border-box;
     }
 
     .navCloseImage {
         width: 30px;
         cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 24px;
     }
 
     .navbarOpen a {
