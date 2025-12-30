@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./MySkillsComponent.module.css";
 
+
 export interface ISkillElement {
   label: string;
   imagePath: string;
@@ -73,10 +74,10 @@ export default function MySkills({ skills = [] }: ISkillsProps) {
                 className={styles.skillDetailMobile}
               >
                 <img
-                  src={skill.imagePathRespo || ""}
-                  alt={skill.label || ""}
-                  className={styles.skillDetailImg}
-                />
+                    src={skill.imagePath}
+                    alt={skill.label}
+                    className={styles.skillDetailImg}
+                  />
                 <ul>
                   {skill.descriptions.map((desc, i) => (
                     <li key={i}>{desc}</li>
