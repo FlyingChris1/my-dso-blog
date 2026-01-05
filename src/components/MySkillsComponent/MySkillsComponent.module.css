@@ -12,7 +12,7 @@
 .innerContent {
   max-width: 1420px;
   width: 100%;
-  padding: 72px 120px;
+  padding: 72px 12px 72px 12px;
   box-sizing: border-box;
   color: white;
 }
