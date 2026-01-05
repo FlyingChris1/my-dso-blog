@@ -5,29 +5,23 @@
 .mySkills {
   display: flex;
   justify-content: center;
-  background-color: #262E34;
+  background-color: #262e34;
   width: 100%;
 }
 
 .innerContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
   max-width: 1420px;
   width: 100%;
   padding: 72px 120px;
   box-sizing: border-box;
+  color: white;
 }
 
 /* ---------- Title ---------- */
 
 .titleMedium {
-  width: 100%;
-  font-weight: 700;
   font-size: 64px;
-  line-height: 120%;
-  text-align: start;
+  font-weight: 700;
   margin-bottom: 32px;
 }
 
@@ -35,28 +29,30 @@
 
 .skillContent {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* ORIGINAL LOGIC */
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  width: 100%;
-  justify-items: center;
 }
 
 /* ---------- Skill Card ---------- */
 
 .skillDetail {
   position: relative;
+  background-color: #91c9f31a;
+  border: 1px solid #91c9f3;
+  border-radius: 30px;
+
+  width: 100%;
+  max-width: 376px;
+  height: 200px;               /* ✅ FIXE HÖHE */
+  padding: 42px 32px;
+
+  box-sizing: border-box;
+  overflow: hidden;            /* ✅ KEIN RAUSLAUFEN */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #91C9F31A;
-  border: 1px solid #91C9F3;
-  border-radius: 30px;
-  padding: 42px 32px;
-  width: 100%;
-  max-width: 376px;
-  height: 200px;
-  box-sizing: border-box;
 }
 
 /* ---------- Icons ---------- */
@@ -68,9 +64,7 @@
 }
 
 .skillName {
-  font-family: 'Reddit Sans';
   font-size: 18px;
-  color: #FFFFFF;
 }
 
 /* ---------- Hover Description ---------- */
@@ -78,42 +72,35 @@
 .hoverDescriptionBox {
   position: absolute;
   inset: 0;
+
   background-color: #507399;
   border-radius: 30px;
-  padding: 16px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  z-index: 10;
+  padding: 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  overflow: hidden;            /* ✅ Text bleibt in Box */
 }
 
-.skillDetail:hover .hoverDescriptionBox {
-  opacity: 1;
+/* ---------- Hover Title ---------- */
+
+.titleHover {
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 600;
 }
 
-/* ---------- Mobile ---------- */
+/* ---------- TEXT FIX (KERNLÖSUNG) ---------- */
 
-.mobileSkillContent {
-  display: none;
-}
+.hoverDescriptionBox ul {
+  font-size: clamp(12px, 1vw, 14px);
+  line-height: 1.4;
 
-@media screen and (max-width: 900px) {
-  .skillContent {
-    display: none;
-  }
-
-  .mobileSkillContent {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #253445;
-    border-radius: 10px;
-    padding: 16px;
-    box-sizing: border-box;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .innerContent {
-    padding: 0 16px;
-  }
+  display: -webkit-box;
+  -webkit-line-clamp: 6;       /* ✅ MAX ZEILEN */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-left: 16px;
 }
