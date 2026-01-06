@@ -183,7 +183,6 @@
         display: none;
     }
 
-
     .projectResponsive {
         display: flex;
         flex-direction: column;
@@ -196,14 +195,13 @@
     .title {
         font-size: 64px;
         color: #FFFFFF;
-        
     }
 
     .respCard {
         background: #266AD9;
         color: #FFFFFF;
         max-width: none;
-        width: 100%;
+        width: 100vw;
         padding: 0 120px;
         display: flex;
         justify-content: center;
@@ -217,7 +215,7 @@
         width: calc(100% + 240px);
         margin-left: -120px;
         margin-right: -120px;
-        padding: 8px 8px 8px 8px;
+        padding: 8px;
     }
 
     .respTitle {
@@ -296,7 +294,6 @@
     }
 }
 
-
 @media (max-width: 1400px) {
     .title {
         font-size: 32px;
@@ -305,12 +302,10 @@
     }
 }
 
-
 @media (max-width: 500px) {
 
     .title {
         width: calc(100% + 48px);
-        /* 24px links + 24px rechts */
         margin-left: -24px;
         margin-right: -24px;
         background-color:#266AD9;
@@ -325,7 +320,7 @@
 
     .respCard {
         padding: 0 24px;
-        width: 100vw;
+        width: 100%;
     }
 
     .respContent {
@@ -339,5 +334,22 @@
 
     .respTags {
         gap: 10px;
+    }
+}
+
+/* 🔧 X-ACHSE: KEINE Scrollleiste von 300px BIS 1400px */
+@media (max-width: 1400px) and (min-width: 301px) {
+
+    .projectResponsive,
+    .respCard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .respContent {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
