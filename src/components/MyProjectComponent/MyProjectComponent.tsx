@@ -84,7 +84,7 @@ export default function MyProjects({ projects}: IProjectsProps) {
       </div>
 
       <div className={styles.projectResponsive}>
-        <h2 className={styles.title}>My project highligts</h2>
+        <h2 className={styles.title}>My project highlights</h2>
         {projects.map((project, index) => (
           <div key={project.label} className={styles.respCard}>
             <div className={styles.respContent}>
