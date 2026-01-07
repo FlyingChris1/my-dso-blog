@@ -1,0 +1,117 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #262E34;
+
+  /* WICHTIG: feste Basis, keine Vererbung von außen */
+  font-size: 16px;
+}
+
+/* verhindert jede weitere Vererbung innerhalb von Contact */
+.contact * {
+  font-size: inherit;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1420px;
+  width: 100%;
+  text-align: start;
+  padding: 72px 110px 72px 110px;
+}
+
+.contactWhyMe {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* 🔧 NUR HIER GEÄNDERT: vorher globales ul / li */
+.contact ul {
+  list-style-type: circle;
+  text-align: start;
+  flex: 1;
+  min-width: 400px;
+  color: #FFFFFF;
+}
+
+.contact li {
+  color: #FFFFFF;
+}
+
+.titleMedium {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  font-family: Quicksand;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: start;
+}
+
+.aContact {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+
+.contactDataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.contactContactDataDetail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.aContact:hover {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1230px) {
+  .titleMedium {
+    font-size: 36px;
+  }
+
+  .contactWhyMe {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact ul {
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titleMedium {
+    font-size: 24px;
+  }
+
+  .contactContainer {
+    padding: 0 10px;
+  }
+
+  .aContact {
+    font-size: 16px;
+  }
+}

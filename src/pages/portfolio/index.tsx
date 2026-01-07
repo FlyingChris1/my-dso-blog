@@ -1,10 +1,11 @@
 import React from "react";
-import "./index.module.css";
+import "./index.css";
 import HeroComponent from "@site/src/components/HeroComponent/HeroComponent";
 import MySkills from "@site/src/components/MySkillsComponent/MySkillsComponent";
 import MyProjects from "@site/src/components/MyProjectComponent/MyProjectComponent";
 import Contact from "@site/src/components/ContactComponent/ContactComponent";
 import Footer from "@site/src/components/FooterComponent/FooterComponent";
+
 
 export default function Render() {
   return (
@@ -15,8 +16,10 @@ export default function Render() {
         </div>
       </div>
 
+      <div className="about-me">
 
-<MySkills
+
+        <MySkills
           skills={[
             {
               label: "HTML",
@@ -111,84 +114,64 @@ export default function Render() {
           ]}
         />
 
+        <MyProjects
+          projects={[
+            {
+              label: "Minecraft Server Container",
+              imagePath: "img/projects/projects/Minecraft.png",
+              description: "The goal of the project is to build a custom Docker image without using prebuilt Minecraft images and to run the server using Docker Compose.",
+              githubUrl: "https://github.com/FlyingChris1/Minecraft-Server-Container",
+              docsUrl: "docs/projects/minecraft-Server",
+              tags: [
+                { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
+                { label: "Docker", imagePath: "img/projects/Docker.png" },
+                { label: "YAML", imagePath: "img/projects/YAML.png" },
+              ],
+            },
 
-      <MyProjects
-        projects={[
-          {
-            label: "Minecraft Container",
-            imagePath: "img/projects/projects/Minecraft.png",
-            description: "The goal of the project is to build a custom Docker image without using prebuilt Minecraft images and to run the server using Docker Compose.",
-            githubUrl: "https://github.com/FlyingChris1/Minecraft-Server-Container",
-            docsUrl: "docs/projects/minecraft-Server",
-            tags: [
-              { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
-              { label: "Docker", imagePath: "img/projects/Docker.png" },
-              { label: "YAML", imagePath: "img/projects/YAML.png" },
-            ],
-            tagsResponsive: [
-              { label: "Shell Scripting", imagePath: "img/projects/respo/Shell.png" },
-              { label: "Docker", imagePath: "img/projects/respo/Container.png" },
-              { label: "YAML", imagePath: "img/projects/respo/YAML.png" },
-            ],
-          },
-          {
-            label: "Juice Shop Master",
-            imagePath: "img/projects/projects/juiceshop.png",
-            description:
-              "The goal is to show the vulnerabilities of websites and show you how people could abuse them to get to your information or even build in code that is not supposed to be on your website.",
-            githubUrl: "https://github.com/FlyingChris1/my-dso-blog/tree/main/docs/projects/Juice-Shop-Master",
-            docsUrl: "docs/projects/Juice-Shop-Master/overview",
-            tags: [
-              { label: "Python", imagePath: "img/projects/Python.png" },
-              { label: "IT Security", imagePath: "img/projects/ITSec.png" },
-            ],
-            tagsResponsive: [
-              { label: "Python", imagePath: "img/projects/respo/Python.png" },
-              { label: "IT Security", imagePath: "img/projects/respo/ITSec.png" },
-            ],
-          },
-          {
-            label: "Wordpress Container",
-            imagePath: "img/projects/projects/Wordpress.png",
-            description:
-              "The goal is to  provide a Docker-based WordPress environment consisting of a WordPress container and a MySQL database container.",
-            githubUrl: "https://github.com/FlyingChris1/Wordpress-SQL-Container",
-            docsUrl: "docs/projects/Wordpress",
-            tags: [
-              { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
-              { label: "Docker", imagePath: "img/projects/Docker.png" },
-            ],
-            tagsResponsive: [
-              { label: "Shell Scripting", imagePath: "img/projects/respo/Shell.png" },
-              { label: "Docker", imagePath: "img/projects/respo/Container.png" },
-            ],
-          },
-          {
-            label: "Conduit Deployment",
-            imagePath: "img/projects/projects/Conduit.png",
-            description:
-              "The project aims to provide a reproducible and scalable environment for running Conduit, with persistent data storage and automated deployment workflows.",
-            githubUrl: "https://github.com/FlyingChris1/Conduit-Deployment",
-            docsUrl: "docs/projects/Conduit-Deployment",
-            tags: [
-              { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
-              { label: "Docker", imagePath: "img/projects/Docker.png" },
-              { label: "YAML", imagePath: "img/projects/YAML.png" },
-              { label: "CD", imagePath: "img/projects/CD.png" },
-            ],
-            tagsResponsive: [
-              { label: "Shell Scripting", imagePath: "img/projects/respo/Shell.png" },
-              { label: "Docker", imagePath: "img/projects/respo/Container.png" },
-              { label: "YAML", imagePath: "img/projects/respo/YAML.png" },
-              { label: "CD", imagePath: "img/projects/respo/CD.png" },
-            ],
-          },
-        ]}
-      />
+            {
+              label: "OWASP Juice Shop Master",
+              imagePath: "img/projects/projects/juiceshop.png",
+              description: "The goal is to show the vulnerabilities of websites and show you how people could abuse them to get to your information or even build in code that is not supposed to be on your website.",
+              githubUrl: "https://github.com/FlyingChris1/my-dso-blog/tree/main/docs/projects/Juice-Shop-Master",
+              docsUrl: "docs/projects/Juice-Shop-Master/overview",
+              tags: [
+                { label: "Python", imagePath: "img/projects/Python.png" },
+                { label: "IT Secturity", imagePath: "img/projects/ITSec.png" },
+              ],
+            },
+            ,
+            {
+              label: "Wordpress Container",
+              imagePath: "img/projects/projects/Wordpress.png",
+              description: "The goal is to  provide a Docker-based WordPress environment consisting of a WordPress container and a MySQL database container.",
+              githubUrl: "https://github.com/FlyingChris1/Wordpress-SQL-Container",
+              docsUrl: "docs/projects/Wordpress",
+              tags: [
+                { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
+                { label: "Docker", imagePath: "img/projects/Docker.png" },
+              ],
+            },
+            {
+              label: "Conduit Deployment",
+              imagePath: "img/projects/projects/Conduit.png",
+              description: "The project aims to provide a reproducible and scalable environment for running Conduit, with persistent data storage and automated deployment workflows.",
+              githubUrl: "https://github.com/FlyingChris1/Conduit-Deployment",
+              docsUrl: "docs/projects/Conduit-Deployment",
+              tags: [
+                { label: "Shell Scripting", imagePath: "img/projects/Shell.png" },
+                { label: "Docker", imagePath: "img/projects/Docker.png" },
+                { label: "YAML", imagePath: "img/projects/YAML.png" },
+                { label: "CD", imagePath: "img/projects/CD.png" },
+              ],
+            },
+          ]
+          }
+        />
+        <Contact></Contact>
+        <Footer></Footer>
+      </div>
 
-
-      <Contact />
-      <Footer />
     </section>
   );
 }
